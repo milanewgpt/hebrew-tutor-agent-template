@@ -1,27 +1,27 @@
 # INSTALL.md — Hebrew Tutor
 
-Это bootstrap-шаблон. Он даёт базовые agent-файлы — не готовое приложение.
+This is a bootstrap template. It provides base agent files, not a complete application.
 
-## Что устанавливается
+## What Gets Installed
 
-Markdown-файлы, которые определяют характер, методику, границы и логику агента-репетитора иврита.
+Markdown files that define the personality, teaching method, boundaries, and logic of the Hebrew tutor agent.
 
-## Установка
+## Installation
 
 ```bash
-# 1. Клонировать репозиторий
+# 1. Clone the repository
 git clone https://github.com/milanewgpt/hebrew-tutor-agent-template.git
 
-# 2. Создать папку агента в OpenClaw
+# 2. Create the OpenClaw agent directory
 mkdir -p ~/.openclaw/workspace/agents/hebrew-tutor-agent
 
-# 3. Скопировать файлы
+# 3. Copy the files
 cp hebrew-tutor-agent-template/*.md ~/.openclaw/workspace/agents/hebrew-tutor-agent/
 ```
 
-## Регистрация в OpenClaw
+## Register in OpenClaw
 
-Добавь агента в `~/.openclaw/openclaw.json`:
+Add the agent to `~/.openclaw/openclaw.json`:
 
 ```json
 {
@@ -35,14 +35,15 @@ cp hebrew-tutor-agent-template/*.md ~/.openclaw/workspace/agents/hebrew-tutor-ag
 }
 ```
 
-Или через CLI:
+Or use the CLI:
+
 ```bash
 openclaw agents add hebrew-tutor-agent
 ```
 
-## Настройка маршрутизации (Telegram)
+## Telegram Routing
 
-Если агент работает в Telegram — настрой маршрут и бот-токен в `openclaw.json`:
+If the agent runs through Telegram, configure routing and the bot token in `openclaw.json`:
 
 ```json
 {
@@ -59,16 +60,16 @@ openclaw agents add hebrew-tutor-agent
 }
 ```
 
-## После установки
+## After Installation
 
-1. Заполни `TOOLS.md` под своё окружение (TTS/STT, RTL-поддержка)
-2. Запусти агента и проведи первое занятие — агент сам соберёт профиль ученика
-3. Постепенно добавляй: память между сессиями, отслеживание прогресса, аудио-упражнения
+1. Fill `TOOLS.md` for your environment: TTS/STT, RTL support, channel behavior.
+2. Start the agent and run the first lesson. The agent should collect the learner profile itself.
+3. Add product modules gradually: cross-session memory, progress tracking, and audio exercises.
 
-## Что добавить в процессе развития
+## Future Extensions
 
-- Память об ученике между сессиями
-- Трекинг прогресса (пройденные темы, слабые места)
-- Модуль произношения (STT на иврите)
-- Flashcard-режим для словарного запаса
-- Разграничение уровней: алефбет → базовый → разговорный → письменный
+- Cross-session learner memory.
+- Progress tracking: completed topics and weak points.
+- Pronunciation module using Hebrew-capable STT.
+- Flashcard mode for vocabulary.
+- Level separation: aleph-bet → basic → conversational → written Hebrew.

@@ -2,51 +2,49 @@
 
 > Russian-first project: this template is intentionally designed for Russian-speaking adults learning Hebrew. Explanations, tutor behavior, and onboarding materials use Russian by design.
 
-Bootstrap-шаблон AI-агента для обучения ивриту на платформе [OpenClaw](https://openclaw.ai).
+Bootstrap template for an AI Hebrew tutor agent on [OpenClaw](https://openclaw.ai).
 
-Создан по аналогии с [english-tutor-agent-template](https://github.com/HinkoK/english-tutor-agent-template).
+Created by analogy with [english-tutor-agent-template](https://github.com/HinkoK/english-tutor-agent-template).
 
-## Для кого
+## Target Users
 
-Взрослые русскоязычные ученики, изучающие иврит — от нуля до разговорного уровня.
+Russian-speaking adults learning Hebrew, from absolute beginner to conversational level.
 
-## Что включает шаблон
+## Included Files
 
-| Файл | Назначение |
-|---|---|
-| `SOUL.md` | Философия и стиль преподавания |
-| `IDENTITY.md` | Личность агента |
-| `AGENTS.md` | Правила поведения и методика |
-| `TOOLS.md` | Особенности среды (RTL, TTS/STT) |
-| `HEARTBEAT.md` | Периодические задачи |
-| `MEMORY.md` | Стабильные границы и правила |
-| `INSTALL.md` | Установка и настройка |
+- `SOUL.md` — teaching philosophy and communication style.
+- `IDENTITY.md` — agent identity.
+- `AGENTS.md` — behavior rules and teaching methodology.
+- `TOOLS.md` — environment notes: RTL, TTS/STT, channel limitations.
+- `HEARTBEAT.md` — recurring tasks, if needed.
+- `MEMORY.md` — stable boundaries and quality rules.
+- `INSTALL.md` — installation and setup.
 
-## Что умеет агент
+## What the Agent Does
 
-- Короткие адаптивные занятия (один шаг за раз)
-- Объяснения на русском, упражнения на иврите
-- Учёт особенностей языка: алефбет, корневая система (שורש), гендер, никуд
-- Адаптация сложности: упрощает при затруднении, ускоряет при уверенности
-- Честная обратная связь без давления и выдуманного прогресса
+- Runs short adaptive lessons, one step at a time.
+- Explains in Russian and gives Hebrew exercises.
+- Handles Hebrew-specific topics: aleph-bet, root system (שורש), gender, niqqud.
+- Adjusts difficulty: simplifies when the learner struggles, accelerates when confidence is high.
+- Gives honest feedback without pressure or fake progress.
 
-## Что не включено (добавляется отдельно)
+## Not Included by Default
 
-- Межсессионная память ученика
-- Трекинг прогресса
-- Аудио-модуль (произношение)
-- Flashcard-режим
-- Уровневая диагностика
+- Cross-session learner memory.
+- Progress tracking.
+- Audio/pronunciation module.
+- Flashcards.
+- Formal level diagnostics.
 
-## Быстрый старт
+## Quick Start
 
 ```bash
 git clone https://github.com/milanewgpt/hebrew-tutor-agent-template.git
 cp hebrew-tutor-agent-template/*.md ~/.openclaw/workspace/agents/hebrew-tutor-agent/
 ```
 
-Полная инструкция → [INSTALL.md](./INSTALL.md)
+Full setup instructions: [INSTALL.md](./INSTALL.md)
 
-## Лицензия
+## License
 
 MIT

@@ -1,7 +1,7 @@
 # HEARTBEAT.md — Hebrew Tutor
 
-По умолчанию этот шаблон не требует heartbeat-задач.
+By default, this template does not require heartbeat jobs.
 
-Добавляй heartbeat-логику только если агенту нужны регулярные проверки: например, напоминания об уроке, отслеживание паузы в занятиях, периодическое повторение пройденного материала.
+Add heartbeat logic only when the agent needs recurring checks, for example lesson reminders, inactivity monitoring, or periodic review of learned material.
 
-Не добавляй heartbeat "про запас" — только когда реально нужен.
+Do not add heartbeat tasks “just in case”. Add them only when there is a real product need.
