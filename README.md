@@ -1,5 +1,7 @@
 # Hebrew Tutor Agent Template
 
+> Russian-first project: this template is intentionally designed for Russian-speaking adults learning Hebrew. Explanations, tutor behavior, and onboarding materials use Russian by design.
+
 Bootstrap-шаблон AI-агента для обучения ивриту на платформе [OpenClaw](https://openclaw.ai).
 
 Создан по аналогии с [english-tutor-agent-template](https://github.com/HinkoK/english-tutor-agent-template).
